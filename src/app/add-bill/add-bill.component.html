@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+
+
+<div class="container blocContainer">
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="image">Lien image</label>
+      <input type="text" class="form-control" id="image" formControlName="image" required aria-describedby="emailHelp" placeholder="Entrer un lien d'une image">
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      <input type="text" class="form-control" id="category" placeholder="Ajouter une catégorie" formControlName="category" required>
+    </div>
+    <div class="form-group">
+      <label for="price">Prix</label>
+      <input type="number" class="form-control" id="price" placeholder="Ajouter un coût" formControlName="price" required>
+    </div>
+    
+
+    <button type="submit" class="btn mt-5">Ajouter Facture</button>
+  </form>
+</div>

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+
+nav {
+    background-color: #00D4B5;
+    color: white !important;
+    font-size: 15px;
+    font-family: 'Oswald';
+}
+
+nav ul li .textMiddle {
+    color: white;
+}
+
+nav .title {
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+}

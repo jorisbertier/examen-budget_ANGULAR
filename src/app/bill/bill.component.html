@@ -1,0 +1,133 @@
+<app-navbar></app-navbar>
+<!-- 
+<p>bill works!</p>
+<p>bill works!</p>
+<p>bill works!</p>
+<p>bill works!</p>
+<p>bill works!</p> -->
+
+<!-- <div class="container">
+    <div class="row">
+      <div *ngFor="let bill of billList; let i = index" class="col-md-4">
+        <div class="card mb-3">
+          <img src="{{bill.image}}" class="card-img-top imgBill" alt="Image de {{bill.category}}">
+          <div class="card-body">
+            <h5 class="card-title">{{bill.category}}</h5>
+            <p class="card-text">Créé le : {{bill.date}}</p>
+            <p class="card-text">Prix : {{bill.price}}</p>
+            
+            <button (click)="deleteBill(i)" class="btn btn-danger">Supprimer</button><<a routerLink="/pokemon/{{bill.id}}" class="btn btn-primary">Voir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p>Total des factures: {{ totalBills }}</p>
+      </div>
+    </div>
+  </div>
+ -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3 p-5 d-flex flex-column dashboardLeft">
+            <div><i class="bi bi-house"></i> Dashboard</div>
+            <div><i class="bi bi-grid-3x3-gap-fill"></i> Toutes les factures</div>
+            <hr>
+            <div class="active"><i class="bi bi-person-fill active"></i> Ada Lovelace</div>
+            <div><i class="bi bi-person-fill"></i> Rama</div>
+            <div><i class="bi bi-person-fill"></i> Ilyes Lenri</div>
+            <div><i class="bi bi-person-fill"></i> Danny Upray</div>
+            <div><i class="bi bi-person-fill"></i> Ali</div>
+        </div>
+
+        <div class="col-6 p-5 dashboardMiddle">
+            <div>
+                <div  class="d-flex flex-row"><img
+                    src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                    class="rounded-circle"
+                    height="25"
+                    alt="Black and White Portrait of a Man"
+                    loading="lazy"
+                />
+                <h2>Ada Lovelace</h2>
+                <button class="btn add ms-5" routerLink="/addBill">Ajouter facture</button>
+                <button class="btn settle ms-2">Settle up</button>
+                </div>
+            </div>
+
+            <h2 class="mt-5 mb-2">Juillet 2023</h2>
+
+            <div class="card mb-3"  *ngFor="let bill of billList2; let i = index">
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex flex-row align-items-center">
+                    <div>
+                      <p>{{bill.date}}</p>
+                    </div>
+                    <div class="ms-3">
+                      <img src="{{bill.image}}" class="card-img-top imgBill" alt="Image de {{bill.category}}">
+                    </div>
+                    <div class="ms-3">
+                      <h5>{{bill.category}}</h5>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row align-items-center">
+                    <div style="width: 80px;">
+                      <h5>Coût:</h5>
+                      <h6 class="mb-0">{{bill.price}} €</h6>
+                    </div>
+                    <!-- <a style="color: red;" (click)="deleteBill(i)"><i class="bi bi-trash-fill"></i></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="mt-5 mb-2">Septembre 2023</h2>
+
+            <div class="card mb-3"  *ngFor="let bill of billList; let i = index">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                      <div>
+                        <p>{{bill.date | date}}</p>
+                      </div>
+                      <div class="ms-3">
+                        <img src="{{bill.image}}" class="card-img-top imgBill" alt="Image de {{bill.category}}">
+                      </div>
+                      <div class="ms-3">
+                        <h5>{{bill.category}}</h5>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center">
+                      <div style="width: 80px;">
+                        <h5>Coût:</h5>
+                        <h6 class="mb-0">{{bill.price}} €</h6>
+                      </div>
+                      <a style="color: red;" (click)="deleteBill(i)"><i class="bi bi-trash-fill"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+        <div class="col-3 p-5 dashboardRight">
+            <div class="d-flex flex-row">
+
+              <div class="bloc"><i class="bi bi-archive"></i></div>
+              <div class="bloc ms-2"><i class="bi bi-box-seam"></i></div>
+              <div class="bloc ms-2"><i class="bi bi-calendar-event"></i></div>
+              <div class="bloc ms-2"><i class="bi bi-gear"></i></div>
+            </div>
+            <div class="col-md-12 mt-5">
+              <h2>TON SOLDE</h2>
+              <p>Total des factures Septembre:<br>€ {{ totalBills }}</p>
+            </div>
+
+        </div>
+    </div>
+</div>

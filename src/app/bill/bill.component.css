@@ -1,0 +1,61 @@
+.imgBill {
+    height: 30px;
+    width: 30px;
+    object-fit: fill;
+}
+
+.dashboardLeft i {
+    font-size: 23px;
+    color: #B0AFAF;
+}
+.dashboardLeft .active{
+    font-size: 25px;
+    color: #00D4B5 !important;
+}
+
+.dashboardLeft {
+    background-color: #FFFFFF;
+    color: #B0AFAF;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.dashboardMiddle {
+    background-color: #F1F1F1;
+}
+
+.dashboardRight {
+    background-color: #FFFFFF;
+}
+.dashboardRight i {
+    font-size: 25px;
+}
+
+.dashboardRight .bloc {
+    background-color: #F1F1F1;
+    border: grey 1px solid;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboardRight h2 {
+    color: #c4c0c0;
+}
+
+.dashboardRight p {
+    color: #00D4B5;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.settle {
+    background-color: #00D4B5;
+}
+
+.add {
+    background-color: #FE6A00;
+}

@@ -1,0 +1,14 @@
+button {
+    background-color: #00D4B5;
+}
+
+.blocContainer {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 400px;
+    width: 400px;
+}
